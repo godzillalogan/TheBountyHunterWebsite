@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanted, dead or alive!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">The Bounty Hunter Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./target.html">target</a>
+                    </li>
+    
+                </ul>
+    
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Search Bar -->
+    <div class="container mt-5 mx-5">
+        <form class="form-inline w-25 d-flex" id="search-form">
+            <input type="text" class="form-control mb-2 mr-sm-4 w-50 mx-1" id="search-input" placeholder="Keyword..." />
+            <button type="submit" class="btn btn-secondary mb-2" id="search-submit">
+                Search
+            </button>
+        </form>
+    </div>
+
+
+    <div class="contaier mt-5 mx-5">
+        <h1 class="justify-content-center" style="text-align: center">Wanted, dead or alive!</h1>
+        <div id="users" class="row">
+            <!--   LUFFY START   原本要放的魯夫檔案-->
+            <!-- <div class="user col-xl-2 col-lg-3 col-sm-4 mt-3">
+                <div class="card" style="width: 18rem;height:442px">
+                    <img src="https://www.omgtw.com/upload/article/original/8e1d25da439471df73867674b5c7a6ed.jpg"
+                        class="card-img-top" alt="..." style="height:285px">
+                    <div class="card-body">
+                        <h5 class="card-title">LUFFY</h5>
+                        <p class="card-text"><em>REWARD : 1500000000</em></p>
+                    </div>
+                </div>
+            </div> -->
+            <!--  LUFFY END    -->
+            <!--  JS    -->
+        </div>
+        <!-- Modal -->
+        <div id="user-modal" class="modal fade">
+            <div   tabindex="-1"   aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="user-modal-name">${name} ${surname}</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body row">
+                      <div class="col-sm-6 text-center" id="user-modal-image">
+                        <img src="https://media.gettyimages.com/videos/black-and-white-loading-indicator-on-dark-background-screen-animation-video-id1129874433?s=640x640" alt="user-poster" class="img-fluid">
+                      </div>
+                      <div class="col-sm-6 text-left" >
+                        <div class="gender" id="user-modal-gender"></div>
+                        <div class="age" id="user-modal-age"></div>
+                        <div class="birthday" id="user-modal-birthday"></div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <!-- paginator -->
+        <nav aria-label="Page navigation" class="mt-4">
+            <ul class="pagination justify-content-center" id="paginator">
+                <!-- 由JS產生 -->
+            </ul>
+        </nav>
+    </div>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
+</html>

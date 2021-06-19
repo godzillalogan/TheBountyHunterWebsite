@@ -1,0 +1,17 @@
+/* 讓整個網站變成黑白 */
+/* html { 
+ -webkit-filter: grayscale(100%);
+ -moz-filter: grayscale(100%); 
+ -ms-filter: grayscale(100%); 
+ -o-filter: grayscale(100%); 
+ filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1); 
+ _filter: none; 
+} */
+
+.card{overflow: hidden;}
+/* filter 濾鏡 */
+.card-img-top {width:100%;transition: all 0.4s;filter: grayscale(100%);}
+/*  transform: scale(1.1) 變大*/
+.card-img-top:hover{transform: scale(1.1);cursor: pointer;filter: grayscale(0);}
+
+.btn-secondary:hover{transform: scale(1.1)}
